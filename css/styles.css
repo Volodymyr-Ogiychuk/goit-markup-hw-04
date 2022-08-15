@@ -449,21 +449,25 @@ ul {
     justify-content: center;
     align-items: center;
     
-    fill: var(--social-networks-icon);
-    
     height: 44px;
     width: 44px;
     border-radius: 50%;
 }
 
-.social-box .social-link {
-    fill: var(--social-networks-icon);
+.social-net {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 44px;
+    width: 44px;
+    
+    border-radius: 50%;
+    fill: var(--social-networks-icon)
 }
 
-
-
-.social-box:hover,
-.social-box:focus {
+.social-net:hover,
+.social-net:focus {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
@@ -478,7 +482,7 @@ ul {
     margin-right: 30px;
 }
 
-.client-box {
+.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,8 +496,8 @@ ul {
 
 }
 
-.client-box:hover,
-.client-box:focus {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -585,12 +589,23 @@ ul {
     fill: var(--primary-white-color);
 }
 
-.footer-social .social-box {
+.social-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background-color: var(--footer-icons-background);
+
+    fill: var(--primary-white-color);
 }
 
-.footer-social .social-box:hover {
-    background-color: var(--accent-color)
+
+.social-foot:hover,
+.social-foot:focus {
+    background-color: var(--accent-color);
+
 }
 
 /* Портфоліо МЕНЮ */
@@ -651,7 +666,7 @@ ul {
     margin: 15px;
 }
 .portfolio-item:hover {
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-style {

@@ -164,10 +164,8 @@ ul {
 }
 
 .icon-envelop {
-    
     margin-right: 10px;
-    stroke: var(--primary-text-color);
-
+    fill: var(--primary-text-color);
 }
 
 .contacts {
@@ -183,12 +181,14 @@ ul {
     color: var(--accent-color);
 }
 
-.contacts .link-contacts:hover,
-.contacts .link-contacts:focus,
-.icon-envelop:hover,
-.icon-envelop:focus {
+.link-contacts:hover,
+.link-contacts:focus {
     color: var(--accent-color);
-    stroke: var(--accent-color);
+    
+}
+
+.icon-envelop {
+    fill: currentColor;
 }
 
 .container {
@@ -429,16 +429,14 @@ ul {
     background-color: var(--primary-white-color);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
-    
-    
+
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
     
 }
 
 .social-list {
     display: flex;
-    padding: 0 32px 30px;
+    justify-content: center;
     margin-top: 16px;
 }
 
@@ -450,7 +448,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-right: 10px; */
     
     fill: var(--social-networks-icon);
     
@@ -458,6 +455,12 @@ ul {
     width: 44px;
     border-radius: 50%;
 }
+
+.social-box .social-link {
+    fill: var(--social-networks-icon);
+}
+
+
 
 .social-box:hover,
 .social-box:focus {
@@ -578,6 +581,10 @@ ul {
     padding-bottom: 0;
 }
 
+.footer-social .social-link {
+    fill: var(--primary-white-color);
+}
+
 .footer-social .social-box {
     background-color: var(--footer-icons-background);
 }
@@ -626,9 +633,7 @@ ul {
 .portfolio .button-secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
 .examples {
@@ -646,9 +651,7 @@ ul {
     margin: 15px;
 }
 .portfolio-item:hover {
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-style {
